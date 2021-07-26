@@ -219,7 +219,7 @@
     <div class="kotak">
       <div id="start" style="display: block">
         <a href="index.html">
-          <button type="button" class="tombol_start">Start</button>
+          <button onclick="pil_start('ya')" type="button" class="tombol_start">Start</button>
         </a>
       </div>
       <!-- HALAMAN UTAMA -->
@@ -656,6 +656,13 @@
     </div>
 
     <script>
+      function pil_start(key) {
+        if (key == "ya") {
+          document.getElementById("start").style.display = "none";
+          document.getElementById("halaman_utama").style.display = "block";
+        }
+      }
+      
       function hal_login() {
         // HALAMAN UTAMA
         var nama = document.getElementById("nama").value;
