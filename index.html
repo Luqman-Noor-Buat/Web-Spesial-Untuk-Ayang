@@ -186,6 +186,28 @@
         color: white;
         cursor: pointer;
       }
+      .tombol_start {
+        font-size: 21px;
+        text-align: center;
+        font-weight: bold;
+        font-family: "Helvetica", sans-serif;
+        color: rgb(118, 9, 255);
+        border: solid 4px;
+        border-color: white;
+        background-color: white;
+        border-radius: 5px;
+        top: 37%;
+        right: 44%;
+        position: absolute;
+        height: 50px;
+        width: 140px;
+      }
+      .tombol_start:hover {
+        font-size: 25px;
+        height: 60px;
+        width: 150px;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -195,6 +217,11 @@
     </audio>
     <!-- KOTAK -->
     <div class="kotak">
+      <div id="start" style="display: block">
+        <a href="index.html">
+          <button type="button" class="tombol_start">Start</button>
+        </a>
+      </div>
       <!-- HALAMAN UTAMA -->
       <div id="halaman_utama" style="display: block">
         <div style="position: absolute; right: 10%; top: 5%"><img src="img/FADHILA ZAHRA1.png" alt="foto utama" width="271px" /></div>
