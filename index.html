@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/foto dila.png" />
+    <title>HBD FADHILA ZAHRA By : MAS</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      .kotak {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: rgb(118, 9, 255);
+      }
+      .font1 {
+        font-weight: bold;
+        color: white;
+        font-family: "Helvetica", sans-serif;
+      }
+      .font2 {
+        font-weight: bold;
+        color: rgb(118, 9, 255);
+        font-family: "Helvetica", sans-serif;
+      }
+      .kotak_form {
+        color: rgb(118, 9, 255);
+        border: solid 4px;
+        border-color: white;
+        background-color: white;
+        border-radius: 20px;
+        top: 70%;
+        left: 20%;
+        position: absolute;
+        height: 100px;
+        width: 510px;
+      }
+      .button_submit {
+        color: rgb(118, 9, 255);
+        border: solid 2px;
+        border-color: white;
+        background-color: white;
+        border-radius: 5px;
+        top: 120%;
+        left: 82%;
+        position: absolute;
+        height: 35px;
+        width: 90px;
+      }
+      .button_submit:hover {
+        font-size: 18px;
+        height: 38px;
+        width: 95px;
+        cursor: pointer;
+      }
+      .kotak_input_form {
+        color: rgb(118, 9, 255);
+        border: solid 2px;
+        border-color: rgb(118, 9, 255);
+        background: white;
+        width: 300px;
+        height: 30px;
+        border-radius: 10px;
+      }
+      .kotak_input_form:hover {
+        border: solid 5px;
+        border-color: rgb(118, 9, 255);
+        cursor: text;
+      }
+      .kotak_interaksi {
+        color: rgb(118, 9, 255);
+        border: solid 6px;
+        border-color: white;
+        background-color: white;
+        border-radius: 10px;
+        top: 8%;
+        left: 35.3%;
+        position: absolute;
+        height: 310px;
+        width: 363px;
+      }
+      .kotak_interaksi:hover {
+        border-color: rgb(118, 9, 255);
+      }
+      .kotak_interaksi_ya_ucapan {
+        font-weight: bold;
+        font-family: "Helvetica", sans-serif;
+        color: rgb(118, 9, 255);
+        border: solid 4px;
+        border-color: white;
+        background-color: white;
+        border-radius: 5px;
+        top: 15%;
+        right: 4%;
+        position: absolute;
+        height: 35px;
+        width: 92px;
+      }
+      .kotak_interaksi_ya_ucapan:hover {
+        font-size: 18px;
+        height: 39px;
+        width: 97px;
+        cursor: pointer;
+      }
+      .kotak_interaksi_ya {
+        font-weight: bold;
+        font-family: "Helvetica", sans-serif;
+        color: rgb(118, 9, 255);
+        border: solid 4px;
+        border-color: white;
+        background-color: white;
+        border-radius: 5px;
+        top: 61%;
+        left: 35.5%;
+        position: absolute;
+        height: 62px;
+        width: 370px;
+      }
+      .kotak_interaksi_ya:hover {
+        border-color: rgb(6, 180, 6);
+        background-color: rgb(6, 180, 6);
+        color: white;
+        cursor: pointer;
+      }
+      .kotak_interaksi_tidak {
+        font-weight: bold;
+        font-family: "Helvetica", sans-serif;
+        color: rgb(118, 9, 255);
+        border: solid 4px;
+        border-color: white;
+        background-color: white;
+        border-radius: 5px;
+        top: 72%;
+        left: 35.5%;
+        position: absolute;
+        height: 62px;
+        width: 370px;
+      }
+      .kotak_interaksi_tidak:hover {
+        border-color: rgb(255, 56, 56);
+        background-color: rgb(255, 56, 56);
+        color: white;
+        cursor: pointer;
+      }
+      .kotak_interaksi_ya_merah {
+        font-weight: bold;
+        font-family: "Helvetica", sans-serif;
+        color: rgb(118, 9, 255);
+        border: solid 4px;
+        border-color: white;
+        background-color: white;
+        border-radius: 5px;
+        top: 61%;
+        left: 35.5%;
+        position: absolute;
+        height: 62px;
+        width: 370px;
+      }
+      .kotak_interaksi_ya_merah:hover {
+        border-color: rgb(255, 56, 56);
+        background-color: rgb(255, 56, 56);
+        color: white;
+        cursor: pointer;
+      }
+      .kotak_interaksi_tidak_hijau {
+        font-weight: bold;
+        font-family: "Helvetica", sans-serif;
+        color: rgb(118, 9, 255);
+        border: solid 4px;
+        border-color: white;
+        background-color: white;
+        border-radius: 5px;
+        top: 72%;
+        left: 35.5%;
+        position: absolute;
+        height: 62px;
+        width: 370px;
+      }
+      .kotak_interaksi_tidak_hijau:hover {
+        border-color: rgb(6, 180, 6);
+        background-color: rgb(6, 180, 6);
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <audio controls autoplay hidden loop>
+      <source src="img/Celengan rindu - fiersa besari (Feby cover).mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <!-- KOTAK -->
+    <div class="kotak">
+      <!-- HALAMAN UTAMA -->
+      <div id="halaman_utama" style="display: block">
+        <div style="position: absolute; right: 10%; top: 5%"><img src="img/FADHILA ZAHRA1.png" alt="foto utama" width="271px" /></div>
+        <div class="font1" style="font-size: 50px; position: absolute; left: 8%; top: 9%">SELAMAT DATANG</div>
+        <div class="font1" style="font-size: 50px; position: absolute; left: 8%; top: 18%">DI WEBSITE SPESIAL</div>
+        <div class="font1" style="font-size: 50px; position: absolute; left: 8%; top: 27%">HANYA UNTUK DEK DILA :v</div>
+        <div class="font1" style="font-size: 35px; position: absolute; left: 8%; top: 41%">LOG IN DULU YAHH...</div>
+        <div class="font1" style="font-size: 15px; position: absolute; left: 8%; top: 47%">*Log in dengan nama lengkap adek dan password adalah tanggal lahir adek.</div>
+        <div style="font-size: 20px; position: absolute; left: 8%; top: 52%">
+          <div class="kotak_form">
+            <form id="form_data_diri" method="GET">
+              <table class="font2" width="500px" border="0" style="position: absolute; left: 1%; top: 10%">
+                <tr>
+                  <td width="180">Nama Lengkap</td>
+                  <td width="180"><input type="text" class="font1 kotak_input_form" id="nama" /></td>
+                </tr>
+                <tr>
+                  <td width="320">Password</td>
+                  <td width="320">
+                    <input type="date" class="font1 kotak_input_form" id="password" />
+                  </td>
+                </tr>
+              </table>
+              <button class="button_submit font1" type="button" onclick="hal_login()">Submit</button>
+            </form>
+          </div>
+        </div>
+        <hr size="5px" width="90%" style="background-color: white; border-color: white; position: absolute; top: 85%; left: 5%" />
+      </div>
+      <!-- HALAMAN 1 -->
+      <div id="halaman_1" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br /><br />
+          Cieee....., adek berhasil login. Eh tapi bentar, ini bener dek dila-nya mas bukan yah? :v
+        </div>
+        <button onclick="pil_A('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Iyaa.., ini dek dila-nya mas ko :)</button>
+        <button onclick="pil_A('tidak')" type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Bukann.., ini bukan dek dila-nya mas :(</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 2 -->
+      <div id="halaman_2" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br />
+          Mas ragu :v<br />
+          Biar mas yakin, adek harus lewati tes dulu, kalau adek berhasil lewati tes itu, mas baru percaya kalau ini itu adek :v
+        </div>
+        <button onclick="pil_B('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Oke.., adek siap mas :v</button>
+        <button onclick="pil_B('tidak')" type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Hiihh.., ko ada tesnya sih, adek ngga mau ah :v</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 3 -->
+      <div id="halaman_3" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br />
+          Cieeee...., mau lewati tes dari mass :v<br />
+          Ehemmmm... :D <br />
+          klik lanjut aja deh :v
+        </div>
+        <button onclick="pil_C('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Oke mass.., lanjottt :v</button>
+        <button type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Percuma kamu klik ini dek, soalnya ngga bisa di klik :v</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 4 -->
+      <div id="halaman_4" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br /><br />
+          Okeh tes yang pertama itu tes kejujuran. Apa benar ini dek dila? :v
+        </div>
+        <button onclick="pil_D('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Bener ko, ini dek dila mas:)</button>
+        <button onclick="pil_D('tidak')" type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Bukan, ini bukan dek dila :( (plis..., jangan klik ini :v)</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 5 -->
+      <div id="halaman_5" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br /><br />
+          Okeh karena adek jujur lanjut ke tes selanjutnya yah :v
+        </div>
+        <button onclick="pil_Y('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Wokee siap mass... :v</button>
+        <button type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Klik yang warna hijau ajah dek :v</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 6 -->
+      <div id="halaman_6" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br />
+          Tapi karena udah terlanjur di klik nda apa-apa deh. Mas udah agak percaya ko kalau ini dek dila, tapi kalau adek nda mau lewati tes selanjutnya klik yg merah aja hmmm :(
+        </div>
+        <button onclick="pil_Z('ya')" type="button" class="kotak_interaksi_ya_merah" style="font-size: 17px; text-align: center">Merah</button>
+        <button onclick="pil_Z('tidak')" type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Merah</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 7 -->
+      <div id="halaman_7" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br /><br />
+          Eh bentar, kalau adek ngga mau ikut tes ya percuma mas udah buat web spesial ini pagi siang malam :(
+        </div>
+        <button onclick="pil_G('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Iya deh mas, adek mau ikut tes :)</button>
+        <button type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Tetap nda mau ikut tes. (tapi tombol ini nda bisa di klik :v)</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 8 -->
+      <div id="halaman_8" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br /><br />
+          Hih adek ko di klik sih itu, ko tetap nda mau ikut tes sih :(<br />
+          Jangan buat mas sedih yah. Ya udah klik itu aja.
+        </div>
+        <button onclick="pil_F('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Klik itu aja :(</button>
+        <button type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">-</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 9 -->
+      <div id="halaman_9" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br /><br /><br />
+          Hih ko ngga mau sih :(<br />
+          Plis lewati tes itu yah dek :(
+        </div>
+        <button onclick="pil_E('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Nggeh deh mas, adek mau lewati tes itu :)</button>
+        <button onclick="pil_E('tidak')" type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Tetep ngga mau mass... (Klik ini aja :v)</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 10 -->
+      <div id="halaman_10" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br />
+          Hahh..??? Ini bukan dek dila-nya mas, ko buka web ini sih. Ini web khusus buat dek dila aja, selain itu ga boleh buka kecuali dengan ijin dek dila. Tolong segera tinggalkan web ini !! ’-’
+        </div>
+        <button onclick="pil_H('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Iya deh, saya tinggalkan web ini.</button>
+        <button onclick="pil_H('tidak')" type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Tapi masss, ini dek dila ko :(</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 11 -->
+      <div id="halaman_11" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br /><br />
+          Eh bentar, kamu bener bukan dek dila kan? Bohong dosa yahh :v
+        </div>
+        <button onclick="pil_I('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Saya bener bukan dek dila ko, dan saya jujur :)</button>
+        <button onclick="pil_I('tidak')" type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Ini dek dila mass.., tadi cuma main-main :(</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 12 -->
+      <div id="halaman_12" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br />
+          Terimakasih sudah jujur :)<br />
+          Nanti kalau mau buka web ini WAJIB ijin Fadhila Zahra yah. Aku ingetin lagi yah BOHONG DOSA :v
+        </div>
+        <a href="/Penyakit_Akibat_Asap_Rokok/index.html">
+          <button type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Dengan klik ini saya berjanji, saat mau buka web ini lagi, saya akan ijin ke Fadhila Zahra :)</button>
+        </a>
+        <button type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Klik yang atas aja.</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 13 -->
+      <div id="halaman_13" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br />
+          Hahh, main-main dek? :(<br />
+          Ko main-main sih sama mas, mas kan lagi serius ini :(<br />
+          Log in dari awal lagi deh dek, biar mas mantab kalau ini adalah dek dila :)
+        </div>
+        <a href="/Penyakit_Akibat_Asap_Rokok/index.html">
+          <button type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Nggeh mas, adek minta maaf. Adek mau login lagi yah :)</button>
+        </a>
+        <button type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">.</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 14 -->
+      <div id="halaman_14" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br />
+          Bener ini dek dila?? Mas belum yakin. Coba jawab ini deh, tempat tanggal lahir mas dimana dan kapan dek?
+        </div>
+        <button onclick="pil_J('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Demak, 29 Desember 2000 dung :v</button>
+        <button onclick="pil_J('tidak')" type="button" class="kotak_interaksi_tidak_hijau" style="font-size: 17px; text-align: center">Madiun, 29 September 2000 lahh :v</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 15 -->
+      <div id="halaman_15" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br />
+          Ehhhh bener :v<br />
+          Tapi mas belum percaya ini adek. Coba jawab pertanyaan ini lagi, siapa nama adek mas di rumah?
+        </div>
+        <button onclick="pil_K('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Dek Intan lahh :v</button>
+        <button onclick="pil_K('tidak')" type="button" class="kotak_interaksi_tidak_hijau" style="font-size: 17px; text-align: center">Dek Berlian dung :v</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 16 -->
+      <div id="halaman_16" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br />
+          Ehhh bener lagi :v<br />
+          Satu pertanyaan lagi baru nanti mas percaya 100%. Apa warna kesukaan mas hayoo? :v
+        </div>
+        <button onclick="pil_L('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Biru dan hijau kyknya deh mas :v</button>
+        <button onclick="pil_L('tidak')" type="button" class="kotak_interaksi_tidak_hijau" style="font-size: 17px; text-align: center">Eh biru dan abu-abu deh mas :v</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 17 -->
+      <div id="halaman_17" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br /><br />
+          wahhh ciee benerr :v Langsung klik lanjut aja deh dek :v
+        </div>
+        <button onclick="pil_N('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Lanjoottt masss :v</button>
+        <button type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Fokus ke hijau :v</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 18 -->
+      <div id="halaman_18" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br />
+          Hei adek ko masih senyum aja, senyummu itu manis dekkk, tahan dulu yah senyumnya :v
+        </div>
+        <button onclick="pil_O('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Nggeh mas, udah adek tahan ko senyumnya :v</button>
+        <button onclick="pil_O('tidak')" type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Duhhh ngga tahan buat senyum mass.. :v</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 19 -->
+      <div id="halaman_19" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br /><br /><br />
+          Dek mau hadiah nda dari mas? :v
+        </div>
+        <!-- HALAMAN 20 => FORM -->
+        <a href="https://bit.ly/form_spesial_untuk_dek_dila"><button type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Mau mass.. :v</button></a>
+        <!-- HALAMAN 21 => FORM -->
+        <button onclick="pil_V('tidak')" type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Duh, nda usah deh mas :)</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 19.1 -->
+      <div id="halaman_19.1" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br /><br />
+          Eh, kenapa ko nda usah dek, nanti kamu isi aja pengen hadiah apa dari mas :v
+        </div>
+        <!-- HALAMAN 20 => FORM -->
+        <a href="https://bit.ly/form_spesial_untuk_dek_dila"><button type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Nggeh mas mau :)</button></a>
+        <!-- HALAMAN 21 => FORM -->
+        <a href="https://bit.ly/form_spesial_untuk_dek_dila"><button type="button" class="kotak_interaksi_tidak_hijau" style="font-size: 17px; text-align: center">Nggeh mas, pasti mau :)</button></a>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+
+      <!-- HALAMAN 22 (UCAPAN ULANG TAHUN) -->
+      <div id="halaman_22" style="display: none">
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/1.png" alt="foto utama" width="1200px" /></div>
+        <div style="position: absolute; right: 4%; top: 30%"><img src="img/2.png" alt="foto utama" width="630px" /></div>
+        <div style="position: absolute; left: 4%; top: 30%"><img src="img/4.png" alt="foto utama" width="520px" /></div>
+        <button onclick="pil_T('ya')" type="button" class="kotak_interaksi_ya_ucapan" style="font-size: 17px; text-align: center">Lanjut :)</button>
+        <hr size="5px" width="90%" style="background-color: white; border-color: white; position: absolute; top: 85%; left: 5%" />
+      </div>
+
+      <!-- HALAMAN 23 -->
+      <div id="halaman_23" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br />
+          Karena adek sudah tau maksud dari web ini, jadi adek langsung klik next aja. Nih webnya mas buat dengan warna kesukaan adek. Oh iya mas mau minta maaf dulu ya dek kalau mas ambil foto adek tanpa ijin untuk keperluan pembuatan web
+          ini :)
+        </div>
+        <button onclick="pil_Q('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Lanjut :)</button>
+        <button onclick="pil_Q('tidak')" type="button" class="kotak_interaksi_tidak_hijau" style="font-size: 17px; text-align: center">Lanjut :)</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 24 -->
+      <div id="halaman_24" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br /><br />
+          Adek tau nda, mas buat web ini untuk apa? :v
+        </div>
+        <button onclick="pil_P('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Adek tau, tapi ngga mau kasih tau :v</button>
+        <button onclick="pil_P('tidak')" type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Adek nda tau, padahal sebenarnya tau :v</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 25 -->
+      <div id="halaman_25" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br />
+          Hayoooo salahhh :D<br />
+          Yang bener itu biru dan hijau dek. Hih adek belum kenal dengan mas deh kyknya :(
+        </div>
+        <button onclick="pil_M('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Sudah kenal banget ko mas, cuma agak lupa :(</button>
+        <button type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Hmm.. ngga bisa di klik :(</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 26 -->
+      <div id="halaman_26" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br />
+          Lhohh ko salah :(<br />
+          Sebenarnya mas sudah agak percaya tadi tapi ko malah salah ya hilang lagi kepercayaan mas. Login lagi dan buat mas yakin yah dek :)
+        </div>
+        <a href="index.html"><button type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Nggeh mas, adek mau login lagi :)</button></a>
+        <button type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">-</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 27 -->
+      <div id="halaman_27" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br />
+          Tuhh kan salahhh :( <br />
+          Kamu siapa ko buka web ini sih. Tolong tinggalkan web ini yah, karena ini web spesial saya buat untuk Fadhila Zahra.
+        </div>
+        <a href="index.html"><button type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Iya saya minta maaf, saya akan keluar dari web ini :(</button></a>
+        <button type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">-</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 28 -->
+      <div id="halaman_28" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br />
+          Iyah deh gpp dek, tapi karena salah, adek harus login dari awal lagi yah. Tapi ingat, nanti jawabnya yg bener lho :)
+        </div>
+        <a href="index.html"><button type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Nggeh mas :)</button></a>
+        <button type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">-</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 29 -->
+      <div id="halaman_29" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br /><br /><br />
+          Disini mas mau mengucapkan.... :v
+        </div>
+        <button onclick="pil_R('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">Klik disini :v</button>
+        <button type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Plisss.. klik yang hijau ajah :v</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+      <!-- HALAMAN 30 -->
+      <div id="halaman_30" style="display: none">
+        <hr size="4px" width="50%" style="background-color: white; border-color: white; position: absolute; top: 2.5%; left: 22%" />
+        <div style="position: absolute; left: 0%; top: 0%"><img src="img/super new_icon1.png" alt="foto utama" width="445px" /></div>
+        <div style="position: absolute; right: 0%; top: 0%"><img src="img/super new_icon2.png" alt="foto utama" width="445px" /></div>
+        <div class="kotak_interaksi font2" style="font-size: 25px; text-align: center">
+          <br /><br /><br /><br /><br />
+          Cieee kepo yah :v
+        </div>
+        <button onclick="pil_S('ya')" type="button" class="kotak_interaksi_ya" style="font-size: 17px; text-align: center">OK :v</button>
+        <button type="button" class="kotak_interaksi_tidak" style="font-size: 17px; text-align: center">Klik OK aja, kejutannya ada di OK :v</button>
+        <hr size="2px" width="15%" style="background-color: white; border-color: white; position: absolute; top: 95%; left: 42%" />
+      </div>
+
+      <!-- CREATED by : MAS -->
+      <div class="font1" style="font-size: 20px; position: absolute; top: 87%; left: 43%">
+        <br />
+        <div style="text-align: center">Created by : MAS</div>
+      </div>
+    </div>
+
+    <script>
+      function hal_login() {
+        // HALAMAN UTAMA
+        var nama = document.getElementById("nama").value;
+        var password = document.getElementById("password").value;
+        var cek = 0;
+        if (nama == "FADHILA ZAHRA") {
+          cek += 1;
+        }
+        if (password == "2001-07-29") {
+          cek += 1;
+        }
+        if (nama != "FADHILA ZAHRA") {
+          alert("Nama lengkap adek harus pakai huruf kapital yah dek :v \nContoh : AYAH IBU FADHILA WIFA NAJWA :v");
+        }
+        if (password != "2001-07-29") {
+          alert("Tanggal lahirnya salah tuh dek. Masa adek lupa tanggal lahir diri sendiri :v");
+        }
+        if (cek == 2) {
+          document.getElementById("halaman_utama").style.display = "none";
+          document.getElementById("halaman_1").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 1
+      function pil_A(key) {
+        if (key == "ya") {
+          document.getElementById("halaman_1").style.display = "none";
+          document.getElementById("halaman_2").style.display = "block";
+        } else {
+          document.getElementById("halaman_1").style.display = "none";
+          document.getElementById("halaman_10").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 2
+      function pil_B(key) {
+        if (key == "ya") {
+          document.getElementById("halaman_2").style.display = "none";
+          document.getElementById("halaman_3").style.display = "block";
+        } else {
+          document.getElementById("halaman_2").style.display = "none";
+          document.getElementById("halaman_9").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 3
+      function pil_C(key) {
+        if (key == "ya") {
+          alert("Eh cie senyum lagi pas baca ini :v");
+          document.getElementById("halaman_3").style.display = "none";
+          document.getElementById("halaman_4").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 4
+      function pil_D(key) {
+        if (key == "ya") {
+          alert("Utututu Adekk :v");
+          alert("Cieee adek senyum :v");
+          document.getElementById("halaman_4").style.display = "none";
+          document.getElementById("halaman_5").style.display = "block";
+        } else {
+          alert("Hih ko masih di klik sih :(");
+          document.getElementById("halaman_4").style.display = "none";
+          document.getElementById("halaman_6").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 5
+      function pil_Y(key) {
+        if (key == "ya") {
+          alert("Eh senyum lagi, aduh-duh senyummu manis banget dek, awokawokawok :v");
+          document.getElementById("halaman_5").style.display = "none";
+          document.getElementById("halaman_14").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 6
+      function pil_Z(key) {
+        if (key == "ya") {
+          alert("Cieee pasti adek bingung deh, ko merah semua yah :v");
+          alert("Itu merah karena adek mas paksa buat ikut tes selanjutnya, dan adek harus mau di paksa :v");
+          document.getElementById("halaman_6").style.display = "none";
+          document.getElementById("halaman_14").style.display = "block";
+        } else {
+          alert("Cieee pasti adek bingung deh, ko merah semua yah :v");
+          alert("Itu merah karena adek mas paksa buat ikut tes selanjutnya, dan adek harus mau di paksa :v");
+          document.getElementById("halaman_6").style.display = "none";
+          document.getElementById("halaman_14").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 7
+      function pil_G(key) {
+        if (key == "ya") {
+          document.getElementById("halaman_7").style.display = "none";
+          document.getElementById("halaman_3").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 8
+      function pil_F(key) {
+        if (key == "ya") {
+          alert("Hmmmm....");
+          document.getElementById("halaman_8").style.display = "none";
+          document.getElementById("halaman_7").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 9
+      function pil_E(key) {
+        if (key == "ya") {
+          document.getElementById("halaman_9").style.display = "none";
+          document.getElementById("halaman_3").style.display = "block";
+        } else {
+          document.getElementById("halaman_9").style.display = "none";
+          document.getElementById("halaman_8").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 10
+      function pil_H(key) {
+        if (key == "ya") {
+          document.getElementById("halaman_10").style.display = "none";
+          document.getElementById("halaman_11").style.display = "block";
+        } else {
+          document.getElementById("halaman_10").style.display = "none";
+          document.getElementById("halaman_14").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 11
+      function pil_I(key) {
+        if (key == "ya") {
+          document.getElementById("halaman_11").style.display = "none";
+          document.getElementById("halaman_12").style.display = "block";
+        } else {
+          document.getElementById("halaman_11").style.display = "none";
+          document.getElementById("halaman_13").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 14
+      function pil_J(key) {
+        if (key == "ya") {
+          document.getElementById("halaman_14").style.display = "none";
+          document.getElementById("halaman_15").style.display = "block";
+        } else {
+          document.getElementById("halaman_14").style.display = "none";
+          document.getElementById("halaman_27").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 15
+      function pil_K(key) {
+        if (key == "ya") {
+          document.getElementById("halaman_15").style.display = "none";
+          document.getElementById("halaman_16").style.display = "block";
+        } else {
+          document.getElementById("halaman_15").style.display = "none";
+          document.getElementById("halaman_26").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 16
+      function pil_L(key) {
+        if (key == "ya") {
+          document.getElementById("halaman_16").style.display = "none";
+          document.getElementById("halaman_17").style.display = "block";
+        } else {
+          document.getElementById("halaman_16").style.display = "none";
+          document.getElementById("halaman_25").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 17
+      function pil_N(key) {
+        if (key == "ya") {
+          alert("Tapi bentar dek, senyumnya di tahan dulu, dilihat ayah ibu itu lho :v");
+          document.getElementById("halaman_17").style.display = "none";
+          document.getElementById("halaman_18").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 18
+      function pil_O(key) {
+        if (key == "ya") {
+          alert("Cieeee senym lagi ini pasti :v\nYa udah gpp senyum deh, yang penting adek bahagia :)");
+          document.getElementById("halaman_18").style.display = "none";
+          document.getElementById("halaman_24").style.display = "block";
+        } else {
+          alert("Cieee yang ngga tahan buat senyumm... :v");
+          document.getElementById("halaman_18").style.display = "none";
+          document.getElementById("halaman_24").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 19
+      function pil_V(key) {
+        if (key == "tidak") {
+          document.getElementById("halaman_19").style.display = "none";
+          document.getElementById("halaman_19.1").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 22
+      function pil_T(key) {
+        if (key == "ya") {
+          alert("Eh lagunya di nikmati dulu dek, sama ucapan ulang tahun dari mas itu di resapi dulu :v.\nTapi kalau pengen lanjut klik ok aja :v");
+          document.getElementById("halaman_22").style.display = "none";
+          document.getElementById("halaman_19").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 23
+      function pil_Q(key) {
+        if (key == "ya") {
+          document.getElementById("halaman_23").style.display = "none";
+          document.getElementById("halaman_29").style.display = "block";
+        } else {
+          document.getElementById("halaman_23").style.display = "none";
+          document.getElementById("halaman_29").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 24
+      function pil_P(key) {
+        if (key == "ya") {
+          alert("Cieee adek tau, ehemm :v");
+          document.getElementById("halaman_24").style.display = "none";
+          document.getElementById("halaman_23").style.display = "block";
+        } else {
+          alert("Padahal jawabannya sama dengan jawaban 1, tapi ko malah ini :D");
+          alert("Cieeee.. senyum yah :v");
+          document.getElementById("halaman_24").style.display = "none";
+          document.getElementById("halaman_23").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 25
+      function pil_M(key) {
+        if (key == "ya") {
+          document.getElementById("halaman_25").style.display = "none";
+          document.getElementById("halaman_28").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 29
+      function pil_R(key) {
+        if (key == "ya") {
+          alert("Cie penasaran yah mas mau ngucap apa :v");
+          alert("Cie nungguin yah :D");
+          alert("Cie senyumnya makin lebar :D");
+          alert("Cieee makin nda sabar adek :v");
+          document.getElementById("halaman_29").style.display = "none";
+          document.getElementById("halaman_30").style.display = "block";
+        }
+      }
+      // PROSES PADA HALAMAN 30
+      function pil_S(key) {
+        if (key == "ya") {
+          alert("Cieee kepoo yahhh adek :v\nUdah klik OK aja :v ");
+          document.getElementById("halaman_30").style.display = "none";
+          document.getElementById("halaman_22").style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
