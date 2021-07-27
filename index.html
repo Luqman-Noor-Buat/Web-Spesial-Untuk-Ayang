@@ -186,7 +186,7 @@
         color: white;
         cursor: pointer;
       }
-      .tombol_start {
+      .tombol_play {
         font-size: 21px;
         text-align: center;
         font-weight: bold;
@@ -196,13 +196,35 @@
         border-color: white;
         background-color: white;
         border-radius: 5px;
-        top: 37%;
-        right: 44%;
+        top: 50%;
+        left: 31%;
         position: absolute;
         height: 50px;
         width: 140px;
       }
-      .tombol_start:hover {
+      .tombol_play:hover {
+        font-size: 25px;
+        height: 60px;
+        width: 150px;
+        cursor: pointer;
+      }
+      .tombol_skip {
+        font-size: 21px;
+        text-align: center;
+        font-weight: bold;
+        font-family: "Helvetica", sans-serif;
+        color: rgb(118, 9, 255);
+        border: solid 4px;
+        border-color: white;
+        background-color: white;
+        border-radius: 5px;
+        top: 50%;
+        right: 31%;
+        position: absolute;
+        height: 50px;
+        width: 140px;
+      }
+      .tombol_skip:hover {
         font-size: 25px;
         height: 60px;
         width: 150px;
@@ -217,8 +239,16 @@
     </audio>
     <!-- KOTAK -->
     <div class="kotak">
+      <div id="start" style="display: block">
+        <div class="font1" style="font-size: 30px; position: absolute; left: 22%; top: 24%">Dek, lagunya kalau belum bunyi klik PLAY dulu yah.</div>
+        <div class="font1" style="font-size: 30px; position: absolute; left: 23%; top: 30%">Tapi kalau lagunya udah bunyi, klik SKIP aja dek.</div>
+        <a href="index.html">
+          <button onclick="pil_start('ya')" type="button" class="tombol_play">Play</button>
+        </a>
+        <button onclick="pil_AA('ya')" type="button" class="tombol_skip">Skip</button>
+      </div>
       <!-- HALAMAN UTAMA -->
-      <div id="halaman_utama" style="display: block">
+      <div id="halaman_utama" style="display: none">
         <div style="position: absolute; right: 10%; top: 5%"><img src="img/FADHILA ZAHRA1.png" alt="foto utama" width="271px" /></div>
         <div class="font1" style="font-size: 50px; position: absolute; left: 8%; top: 9%">SELAMAT DATANG</div>
         <div class="font1" style="font-size: 50px; position: absolute; left: 8%; top: 18%">DI WEBSITE SPESIAL</div>
@@ -651,7 +681,13 @@
     </div>
 
     <script>
-      
+      function pil_AA(key) {
+        if (key == "ya") {
+          document.getElementById("start").style.display = "none";
+          document.getElementById("halaman_utama").style.display = "block";
+        }
+      }
+
       function hal_login() {
         // HALAMAN UTAMA
         var nama = document.getElementById("nama").value;
