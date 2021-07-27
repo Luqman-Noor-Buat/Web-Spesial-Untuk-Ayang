@@ -683,8 +683,14 @@
     <script>
       function pil_AA(key) {
         if (key == "ya") {
-          document.getElementById("start").style.display = "none";
-          document.getElementById("halaman_utama").style.display = "block";
+          var udah = confirm("Lagunya udah beneran bunyi kan dek?.  Kalau masih belum klik 'Cancle' aja yah.  Tapi kalau udah bunyi klik 'Ok' aja.");
+          if (udah) {
+            document.getElementById("start").style.display = "none";
+            document.getElementById("halaman_utama").style.display = "block";
+          } else {
+            alert("Klik play dulu yah.");
+            document.getElementById("start").style.display = "block";
+          }
         }
       }
 
