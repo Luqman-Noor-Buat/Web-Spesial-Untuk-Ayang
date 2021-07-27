@@ -688,7 +688,7 @@
             document.getElementById("start").style.display = "none";
             document.getElementById("halaman_utama").style.display = "block";
           } else {
-            alert("Klik play dulu yah.");
+            alert("Klik play dulu yah kalau lagunya masih belum bunyi.");
             document.getElementById("start").style.display = "block";
           }
         }
@@ -884,9 +884,14 @@
       // PROSES PADA HALAMAN 22
       function pil_T(key) {
         if (key == "ya") {
-          alert("Eh lagunya di nikmati dulu dek, sama ucapan ulang tahun dari mas itu di resapi dulu :v.\nTapi kalau pengen lanjut klik ok aja :v");
-          document.getElementById("halaman_22").style.display = "none";
-          document.getElementById("halaman_19").style.display = "block";
+          var lanjut = confirm("Eh lagunya di nikmati dulu dek, sama ucapan ulang tahun dari mas itu di resapi dulu :v\nTapi kalau pengen lanjut klik 'Ok' aja, kalo masih pengen menikmati klik 'Cancle' aja.");
+          if (lanjut) {
+            document.getElementById("halaman_22").style.display = "none";
+            document.getElementById("halaman_19").style.display = "block";
+          } else {
+            alert("Adek nikmati dan resapi dulu yah :v");
+            document.getElementById("halaman_22").style.display = "block";
+          }
         }
       }
       // PROSES PADA HALAMAN 23
